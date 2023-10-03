@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Logo, LogoutBtn } from "../index";
-import { UseSelector, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -10,27 +10,27 @@ const Header = () => {
     const navItems = [
       {
         name: 'Home',
-        slug: '/'
+        slug: '/',
         active: true
       },
       {
         name: 'Login',
-        slug: '/login'
+        slug: '/login',
         active: !authStatus
       },
       {
         name: 'Signup',
-        slug: '/signup'
+        slug: '/signup',
         active: !authStatus
       },
       {
         name: 'All Posts',
-        slug: '/all-posts'
+        slug: '/all-posts',
         active: authStatus
       },
       {
         name: 'Add Post',
-        slug: '/add-post'
+        slug: '/add-post',
         active: authStatus
       }
     ]
